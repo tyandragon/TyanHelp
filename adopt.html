@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
+        .dog-card { border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center; }
+        .adoption-form { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Dog Adoption Gallery</h1>
+    <h2>Available Dogs for Adoption</h2>
+    <div>
+        <label for="breed-filter">Filter by Breed:</label>
+        <select id="breed-filter">
+            <option value="all">All</option>
+            <option value="labrador">Labrador</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="beagle">Beagle</option>
+            <option value="poodle">Poodle</option>
+        </select>
+    </div>
+    <div class="gallery">
+        <div class="dog-card">
+            <img src="dog1.jpg" alt="Dog 1" style="width: 100%;">
+            <h3>Buddy</h3>
+            <p>Breed: Labrador</p>
+            <p>Age: 2 years</p>
+            <p>Description: Friendly and playful.</p>
+        </div>
+        <div class="dog-card">
+            <img src="dog2.jpg" alt="Dog 2" style="width: 100%;">
+            <h3>Max</h3>
+            <p>Breed: Bulldog</p>
+            <p>Age: 3 years</p>
+            <p>Description: Calm and loving.</p>
+        </div>
+        <div class="dog-card">
+            <img src="dog3.jpg" alt="Dog 3" style="width: 100%;">
+            <h3>Charlie</h3>
+            <p>Breed: Beagle</p>
+            <p>Age: 1 year</p>
+            <p>Description: Energetic and adorable.</p>
+        </div>
+        <div class="dog-card">
+            <img src="dog4.jpg" alt="Dog 4" style="width: 100%;">
+            <h3>Daisy</h3>
+            <p>Breed: Poodle</p>
+            <p>Age: 4 years</p>
+            <p>Description: Smart and affectionate.</p>
+        </div>
+    </div>
+    <form class="adoption-form">
+        <h2>Adoption Form</h2>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="dog-name">Dog's Name:</label>
+        <input type="text" id="dog-name" name="dog-name" required>
+        <br>
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
